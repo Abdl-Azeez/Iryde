@@ -32,6 +32,184 @@ h3.tittle, h3.tittle.two {
     text-shadow: 0 0 0.5px rgb(58 57 57 / 25%);
     text-transform: uppercase;
 }
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 0px 10px 5px;
+  padding-top:60px;
+  margin-bottom: 70px;
+  background: #00b14f;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 24px;
+  /* opacity: .6; */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  color: black;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #fff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  /* border-top: 1px solid #41414d; */
+  padding-top: 10px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar .title-open-right-sidebar  {
+  background: #00B14F;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  /* border-radius: 50px; */
+  border-top-left-radius: 9px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  /* opacity: .5; */
+}
+.toggle-right-sidebar .title-open-right-sidebar :hover {
+color: #333;
+}
+.toggle-right-sidebar .title-open-right-sidebar .tooltiptext{
+	line-height: normal !important;
+	font-weight: 900;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 90px;
+  /* width: 90px; */
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 50px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 80px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+  overflow: visible;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+  } 
+}
+
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+.tooltips{
+	position: relative;
+}
+.tooltips .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #01cd74;
+  color: #000;
+  text-align: center;
+  font-size: 16px !important;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 999;
+  bottom: 5%;
+  right: 100%;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltips .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  margin-left: 0.5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:   transparent transparent transparent #01cd74;
+}
+
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 .bottom-gd span {
     font-size: 2em;
     color: #616569;
@@ -63,7 +241,7 @@ ul.list-unstyled.apps-lists {
     list-style: none;
 }
 ul.apps-lists li a {
-    background: #ffc80a;
+    background: #00B14F;
     color: #1b1e21;
     padding: 1em 2em;
     border-radius: 0px;
@@ -169,7 +347,7 @@ a.sign {
     font-weight: 500;
 }
 .top-forms span a:hover {
-    background: #ffc107;
+    background: #00B14F;
     border: 1px dotted #fff;
     color: #fff;
 }
@@ -177,7 +355,7 @@ a.sign {
     color: #fff;
 }
 .top-forms a i{
-	color: #ffc107;
+	color: #00B14F;
 }
 .top-forms span:nth-child(3) a i{
 	color: #fff;
@@ -193,10 +371,10 @@ a.sign {
     padding: 10px 20px;
 	border-radius: 3px;
     font-weight: 500;
-	background: #ffc107  ;
+	background: #00B14F  ;
 }
 .top-forms span:nth-child(3) a:hover {
-    background: #fee187;
+    background: #7be8ac;
     border: 1px dotted #000;
     color: #555;
 }
@@ -255,7 +433,7 @@ a.navbar-brand {
 	text-transform: uppercase;
 }
 .logo i {
-    color: #ffc107;
+    color: #00B14F;
     text-shadow: none;
 }
 .log-icons li {
@@ -268,7 +446,7 @@ a.navbar-brand {
     font-weight: 500;
 }
 .log-icons p i {
-    color: #ffc107;
+    color: #00B14F;
     margin-right: 4px;
 }
 /*-- top-bar_sub_header --*/
@@ -285,7 +463,7 @@ h3.logo a.navbar-brand {
 }
 
 h3.logo a.navbar-brand i {
-	color: #ffc107;
+	color: #00B14F;
 }
 
 .top-header {
@@ -409,7 +587,7 @@ h3.logo a.navbar-brand i {
 }
 
 .right-form-submitt input[type="submit"] {
-	background: #ffc107;
+	background: #00B14F;
 	border: none;
 	color: #fff;
 	font-size: 14px;
@@ -436,7 +614,7 @@ h3.logo a.navbar-brand i {
     font-weight: 600;
 }
 .modal-header {
-    background: #ffc107;
+    background: #00B14F;
 	color: #fff;
 	border: none;
     padding: 1.5rem;
@@ -629,7 +807,7 @@ label{
 .centered-btns_here a,
 .transparent-btns_here a,
 .large-btns_here a {
-	background: #ffc107;
+	background: #00B14F;
 }
 
 .banner-img,
@@ -701,8 +879,8 @@ label{
     display: inline-block;
 }
 .banner-info a:hover {
-	background: #ffc107;
-    border: 2px solid #ffc107;
+	background: #00B14F;
+    border: 2px solid #00B14F;
     color: #fff;
 }
 .banner-info span {
@@ -1071,7 +1249,7 @@ i.fa.fa-smile {
     text-transform: capitalize;
 }
 .about-head a:hover {
-    background: #ffc107;
+    background: #00B14F;
 }
 /*-- //About Us--*/
 
@@ -1249,7 +1427,7 @@ i.fa.fa-smile {
     font-family: 'Raleway', sans-serif;
 }
 .form-contact-form-grid button.btn1:hover {
-    background: #ffc107;
+    background: #00B14F;
 }
 
 .map iframe {
@@ -1274,7 +1452,7 @@ i.fa.fa-smile {
 }
 .address-grid i {
       font-size: 20px;
-    color: #ffc107;
+    color: #00B14F;
     background: #333;
     width: 60px;
     height: 60px;
@@ -1432,7 +1610,7 @@ i.fa.fa-smile {
     left: 40%;
 }
 .stats-count_grid_left span {
-    color: #ffc107;
+    color: #00B14F;
     margin-bottom: 15px;
 }
 /*-- //counter--*/
@@ -1469,8 +1647,8 @@ i.fa.fa-smile {
     display: inline-block;
 }
 .booking a:hover {
-    background: #ffc107;
-    border: 2px solid #ffc107;
+    background: #00B14F;
+    border: 2px solid #00B14F;
     color: #fff;
 }
 /*-- booking --*/
@@ -1710,11 +1888,11 @@ select#direction option {
 .book-taxi-form input[type="submit"],
 .book-taxi-form input[type="reset"] {
     text-transform: capitalize;
-    background: #ffc107;
+    background: #00B14F;
     color: #fff;
     padding: 0.7em 0em;
     border: none;
-    border: 2px solid #ffc107;
+    border: 2px solid #00B14F;
     font-weight: 600;
     font-size: 15px;
     margin-top: 1em;
@@ -1923,8 +2101,8 @@ ul.radio-w3ls li {
 	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, 0.5);
-		border-color: #ffc107;
-		background: #ffc107;
+		border-color: #00B14F;
+		background: #00B14F;
 	}
 	.navbar-toggler {
 		border-radius: 0rem;
