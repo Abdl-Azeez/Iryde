@@ -247,9 +247,6 @@ readers do not read off random characters that represent icons */
 .fa-anchor:before {
   content: "\f13d"; }
 
-.fa-android:before {
-  content: "\f17b"; }
-
 .fa-angellist:before {
   content: "\f209"; }
 
@@ -291,9 +288,6 @@ readers do not read off random characters that represent icons */
 
 .fa-apper:before {
   content: "\f371"; }
-
-.fa-apple:before {
-  content: "\f179"; }
 
 .fa-apple-pay:before {
   content: "\f415"; }
