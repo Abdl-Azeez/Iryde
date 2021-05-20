@@ -968,8 +968,8 @@ footer {
 
 .footer-grid-grid1 h3,.footer-grid-posts h3 {
 	font-size: 1.3em;
-    color: #ccc;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
      position: relative;
@@ -990,6 +990,12 @@ footer {
     outline: none;
      letter-spacing: 1px;
     line-height: 26px;
+	font-weight: 800;
+}
+.footer-grid-grid1 span {
+    color: #FFF;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 .footer-cpy.text-center {
     border-top: 1px solid;
@@ -1104,28 +1110,54 @@ ul.inner-footer-bottom-list li span {
 /*--//footer--*/
 
 /*--/copyright--*/
-
+footer .iryde{
+	    font-size: 2em;
+    font-weight: 800;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 37%);
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: none;
+}
 .copyrighttop {
 	margin: 2em 0 0;
 }
-
-a.facebook {
-	color: #fff;
-    font-size: 13px;
+.copyrighttop h3{
+	font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+	text-transform: none;
+	letter-spacing: normal;
+    position: relative;
+}
+a.social{
+font-size: 20px;
     background: rgba(241, 245, 249, 0.08);
     width: 40px;
     height: 40px;
     display: block;
     text-align: center;
     line-height: 40px;
-    border-radius: 3px;
+    border-radius: 50px;
+}
+a.facebook {
+	color: blue;
+}
+a.twitter {
+	color: #0077B5;}
+a.youtube {
+	color: red;
+}
+a.google {
+	color: #db4a39;
 }
 
-a.facebook:hover {
+a.social:hover {
     color: #333;
     background: #ccc;
 }
-
+.inner-footer-bottom-list{
+	line-height: 35px;
+}
 .copyright {
 	background: #141415;
 	color: #fff;
@@ -1134,7 +1166,7 @@ a.facebook:hover {
 }
 
 .footer-copyrightbottom p {
-	color: #64686b;
+	color: #c1c5c7;
 	letter-spacing: 1px;
 	line-height: 28px;
      font-size: 16px;
