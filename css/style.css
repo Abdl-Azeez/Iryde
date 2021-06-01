@@ -981,9 +981,18 @@ label{
 .fareEstimator .heading{
 	margin-top: 200px;
 }
+.benefitsHeader{
+	    color: #000;
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 1px 1px 1px #29b14f;
+}
 .riderDownload h3,
 .fare h3,
-.partner h4{
+.partner h4,
+.careerText h4{
 	color: #00b14f;
     text-shadow: 3px 2px 2px #edfdf6;
 	width: 264px;
@@ -1005,6 +1014,14 @@ label{
     font-size: 36px;
     line-height: 44px;
 }
+.careerText h4{
+	font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    width: 100%;
+    text-shadow: 3px 2px 2px #3e403f;
+}
 .fareEstimator .btn,
 .driverpartner .btn{
 	padding: 10px 50px;
@@ -1016,12 +1033,64 @@ label{
     box-shadow: 0px 12px 35px rgb(160 121 0 / 20%);
     border-radius: 100px;
 }
+.career .btn{
+	padding: 10px 50px;
+    color: #1FE88D;
+    font-weight: 600;
+    background: #ffffff;
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    border-radius: 100px;
+}
 .driverpartner{
 	    background: #edfdf6;
 }
+.career{
+	background: linear-gradient(253.58deg, #1FE88D 1.55%, #001906 95.8%);
+}
 /*--//banner --*/
 
+.careerImg img{
+	position: relative;
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+}
 
+
+.careerImg img:nth-child(1){
+    left: 64%;
+    /* right: 31.57%; */
+	top: 335px;
+	width: 210px
+}
+.careerImg img:nth-child(2){
+	height: 250px;
+    left: 85px;
+}
+.careerImg img:nth-child(3){
+    width: 280px;
+    height: 300px;
+    bottom: 160px;
+}
+.careerImg img:nth-child(4){
+	height: 130px;
+    width: 80px;
+    bottom: 75px;
+	left: 5px;
+}
+
+.careerImg img:nth-child(5){
+	width: 80px;
+    height: 130px;
+    top: 70px;
+    right: 370px;
+}
+.careerImg img:nth-child(6){
+	bottom: 150px;
+    width: 285px;
+    height: 220px;
+    left: 85px;
+}
 /*--footer--*/
 
 h3.tittle.cen.foot {
